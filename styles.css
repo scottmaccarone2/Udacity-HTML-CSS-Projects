@@ -1,0 +1,35 @@
+/* add your CSS here */
+span {
+    font-weight: bold;
+}
+
+img {
+    width: 300px;
+}
+
+body {
+    color: white;
+}
+
+.bigBox {
+    width: 300px;
+    margin: 5px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    box-shadow: 5px 5px black;
+    background-color: #70701b;
+}
+
+.smallBox {
+    width: auto;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #0c2e11;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
