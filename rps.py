@@ -4,12 +4,20 @@ moves = ['rock', 'paper', 'scissors']
 
 
 class Player:
-    def move(self):
-        return 'rock'
+    # def move(self):
+    #     return 'rock'
 
     def learn(self, my_move, their_move):
         self.my_move = my_move
         self.their_move = their_move
+
+
+class RockPlayer(Player):
+    def __init__(self):
+        super().__init__()
+
+    def move(self):
+        return 'rock'
 
 
 class RandomPlayer(Player):
@@ -59,6 +67,8 @@ class ReflectPlayer(Player):
                 return 'paper'
             elif self.their_move == 'scissors':
                 return 'scissors'
+
+# Change the below code to be more scalable/less repetitive using a loop
 
 
 class CyclePlayer(Player):
